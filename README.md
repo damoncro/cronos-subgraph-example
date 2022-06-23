@@ -25,7 +25,7 @@ where network should be
 | Network  | dataSources.network |
 | --------------- | ------------- |
 | Cronos Mainnet  | cronos  |
-| Cronos Testnet3 | testnet3  |
+| Cronos Testnet3 | cronos-testnet  |
 
 Steps for and deployment:
 1. 

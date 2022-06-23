@@ -1,0 +1,12 @@
+type TokenTransfer @entity {
+  id: ID!
+  from: String!
+  amount: BigInt!
+  block: BigInt!
+  transactionHash: String!
+  timestamp: BigInt!
+}
+
+type User @entity {
+  id: ID! # user address
+}

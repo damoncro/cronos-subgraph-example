@@ -21,9 +21,11 @@ dataSources:
     network: cronos
 ```
 where network should be 
-`cronos` for Cronos Mainnet
-`testnet3` for Cronos Testnet3
 
+| Network  | dataSources.network |
+| --------------- | ------------- |
+| Cronos Mainnet  | cronos  |
+| Cronos Testnet3 | testnet3  |
 
 Steps for and deployment:
 1. 

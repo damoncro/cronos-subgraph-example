@@ -1,28 +1,29 @@
 specVersion: 0.0.4
-description: Cronos Subgraph Playground By Eve
-repository: https://github.com/graphprotocol/example-subgraph
+description: EIP-721
+repository: https://github.com/wighawag/eip721-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: Example
+    name: EIP721
     network: cronos
     source:
-      address: '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23'
-      abi: ERC20
-      startBlock: 1832630
+      abi: EIP721
+      startBlock: 1
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
       language: wasm/assemblyscript
       entities:
-        - User
-        - Block
-        - Transaction
+        - Token
+        - TokenContract
+        - Owner
+        - OwnerPerTokenContract
+        - All
       abis:
-        - name: ERC20 
-          file: ./abis/ERC20.json
+        - name: EIP721
+          file: ./abis/All.json
       eventHandlers:
-        - event: Transfer(indexed address,indexed address,uint256)
+        - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts

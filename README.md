@@ -6,8 +6,8 @@ For more information see the docs on https://thegraph.com/docs/.
 make sure to config as below for compatiable version with https://portal.cronoslabs.com/ :
 in package.json
 ```
-    "@graphprotocol/graph-cli": "^0.21.0",
-    "@graphprotocol/graph-ts": "^0.20.0"
+    "@graphprotocol/graph-cli": "^0.22.1",
+    "@graphprotocol/graph-ts": "^0.22.1"
 ```
 in subgraph.yaml
 ```
@@ -20,7 +20,7 @@ dataSources:
   - kind: ethereum/contract
     network: cronos
 ```
-where network should be 
+where network should be
 
 | Network  | dataSources.network |
 | --------------- | ------------- |
@@ -28,7 +28,7 @@ where network should be
 | Cronos Testnet3 | cronos-testnet  |
 
 Steps for and deployment:
-1. 
+1.
 ```
 yarn install && yarn codegen && yarn build
 ```
